@@ -7,7 +7,7 @@ const http = require('http');
 const fileUpload = require('express-fileupload');
 const axios = require('axios');
 const mime = require('mime-types');
-var port = process.env.PORT || 8000;
+const port = process.env.PORT;
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
@@ -423,7 +423,7 @@ client.on('message', async msg => {
 
 console.log("\nA Comunidade ZDG é a oportunidade perfeita para você aprender a criar soluções incríveis usando as APIs, sem precisar de experiência prévia com programação. Com conteúdo exclusivo e atualizado, você terá tudo o que precisa para criar robôs, sistemas de atendimento e automações do zero. O curso é projetado para iniciantes e avançados, e oferece um aprendizado prático e passo a passo para que você possa criar soluções incríveis.")
 console.log("\nIncreva-se agora acessando link: comunidadezdg.com.br\n")
- const host="0.0.0.0"   
+  
 server.listen(host, function() {
         console.log('Aplicação rodando na porta *: ' + port + ' . Acesse no link: http://localhost:' + port);
 });
