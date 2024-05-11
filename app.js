@@ -423,7 +423,7 @@ client.on('message', async msg => {
 
 console.log("\nA Comunidade ZDG é a oportunidade perfeita para você aprender a criar soluções incríveis usando as APIs, sem precisar de experiência prévia com programação. Com conteúdo exclusivo e atualizado, você terá tudo o que precisa para criar robôs, sistemas de atendimento e automações do zero. O curso é projetado para iniciantes e avançados, e oferece um aprendizado prático e passo a passo para que você possa criar soluções incríveis.")
 console.log("\nIncreva-se agora acessando link: comunidadezdg.com.br\n")
-    
-server.listen(port, function() {
+ const host="0.0.0.0"   
+server.listen(host, function() {
         console.log('Aplicação rodando na porta *: ' + port + ' . Acesse no link: http://localhost:' + port);
 });
